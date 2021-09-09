@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  mysqlAPI: 
+    build: ./MySQL/.
+    image: mysqlapi 
+    ports:
+      - "8009:80"
+    container_name: Backen_Habi
+    env_file: 
+      - credentials.env
